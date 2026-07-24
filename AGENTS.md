@@ -62,3 +62,26 @@
 - Commit 信息简洁明确
 - 不执行强制推送
 - 不删除 Git 历史
+
+### 常用 Git 命令
+
+```bash
+git status
+git add index.html styles.css script.js AGENTS.md
+git commit -m "describe your change"
+git push
+```
+
+在操作前先运行 `git status`，确认将要提交的文件。只添加实际修改的文件，不要无差别 `git add .`。
+
+## 隐私与安全
+
+公开仓库中的所有内容都可能被任何人看到。**绝对不能提交以下内容：**
+
+- 身份证号、手机号、家庭住址
+- 私人邮箱密码、API Key、Token
+- 未经许可公开的实验数据
+- 导师、同学或项目伙伴的私人信息
+- 私人日记或含敏感信息的完整成绩单
+
+如果不确定某条信息是否适合公开，先询问用户确认。
