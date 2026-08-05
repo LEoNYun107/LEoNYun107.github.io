@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="胶州湾不同风速条件下的深度平均风生环流数值实验。">
+  <meta name="theme-color" content="#07111f"><link rel="canonical" href="https://leonyun107.github.io/projects/jiaozhou-bay-circulation.html"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><title>Jiaozhou Bay Wind-driven Circulation | Leon Hou</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="site-header"><a class="brand" href="../index.html" aria-label="Leon Hou 首页"><span class="brand-mark" aria-hidden="true">LH</span><span class="brand-copy"><strong>LEON HOU</strong><small>RESEARCH · BUILDING · THINKING</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button><nav id="main-nav" class="site-nav" aria-label="主导航"><a href="../index.html">Home</a><a href="index.html" aria-current="page">Work</a><a href="../about.html">About</a><a class="nav-external" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">GitHub</a></nav></header>
+  <main id="main-content">
+    <section class="section-shell project-hero"><p class="project-kicker">Course Training · Independent Implementation</p><h1>胶州湾<span>风生环流数值实验</span></h1><p class="lead">围绕 EFDC 网格信息和简化的二维深度平均浅水方程，比较不同南风风速下胶州湾环流的响应。本页聚焦风生流部分。</p><p class="project-summary-en" lang="en">A course-based circulation experiment using EFDC grid information and an independently implemented depth-averaged Python solver. The study focuses on idealized wind-driven response and qualitative comparison, not on a validated replacement for EFDC.</p><dl class="project-meta-grid"><div><dt>Role</dt><dd>Python 求解与分析独立完成</dd></div><div><dt>Context</dt><dd>近海环境数值模拟课程训练</dd></div><div><dt>Tools</dt><dd>Python · NumPy · Numba · EFDC grid inputs</dd></div></dl></section>
+    <figure class="project-figure section-shell section-compact"><img src="../assets/images/jiaozhou-wind-response.webp" width="1185" height="882" alt="胶州湾深度平均流速随南风风速增加的响应曲线"><figcaption>理想化南风实验中的深度平均流速响应。该图用于检查模型行为，不代表观测拟合或业务预报能力。</figcaption></figure>
+    <section class="section-shell project-content"><h2>Context</h2><div class="reading"><p>课程训练最初使用 EFDC 配置胶州湾潮流与风生流。为更直接理解网格、边界条件和求解过程，我进一步基于课程网格信息独立实现了一个简化的二维深度平均浅水方程求解器，并对不同风速工况进行比较。</p><p>这个实现是理解数值模式结构的训练，不应被描述成开发了成熟海洋模式，也不能代替 EFDC 的完整三维功能。</p></div></section>
+    <section class="section-shell project-content"><h2>Approach</h2><div class="reading"><div class="evidence-list"><article class="evidence-item"><strong>网格与变量</strong><p>复用课程中的 EFDC 网格信息，构建 Arakawa C-grid 上的水位和速度变量。</p></article><article class="evidence-item"><strong>简化控制方程</strong><p>采用线性、深度平均浅水方程，包含风应力、压力梯度、科氏力和底摩擦。</p></article><article class="evidence-item"><strong>多工况比较</strong><p>设置无风及不同南风风速，检查稳态流速、方向、水位响应和测站时间演化。</p></article><article class="evidence-item"><strong>数值检查</strong><p>记录稳定性、边界格点、海岸线遮罩和可视化伪影，并在结果解释中保留已知局限。</p></article></div></div></section>
+    <section class="section-shell project-content"><h2>What was checked</h2><div class="reading"><p>无风工况应保持接近静止；南风条件下流场方向需要与科氏偏转和湾内几何约束保持基本一致；随风速增加，整体流速响应应连续，并在湾口等狭窄区域表现出更强流速。</p><p>这些检查主要是物理一致性和定性比较，不等同于与观测完成定量验证。</p></div></section>
+    <section class="section-shell project-content"><h2>Limits</h2><div class="reading"><ul><li>使用线性二维方程，不含完整三维结构和非线性平流。</li><li>开边界、水深、底摩擦和风场均有简化。</li><li>当前重点是风生流；潮汐边界与 EFDC 的定量对照仍可继续完善。</li><li>不公开课程原始网格、团队资料或任何成员信息。</li></ul></div></section>
+    <section class="section-shell section-rule next-project"><div><p class="section-label">NEXT PROJECT</p><h2>本科课程知识库</h2><p class="quiet">从数值模型转向另一个长期系统：如何重新组织学习本身。</p></div><a class="button button-secondary" href="course-knowledge-base.html">继续阅读 →</a></section>
+  </main>
+  <footer class="site-footer"><p>© <span id="year"></span> Leon Hou.</p><p><a href="index.html">返回作品索引</a></p></footer><script src="../script.js"></script>
+</body>
+</html>

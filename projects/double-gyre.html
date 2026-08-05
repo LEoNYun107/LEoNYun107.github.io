@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Double Gyre 流场可视化与拉格朗日粒子追踪独立课程项目。">
+  <meta name="theme-color" content="#07111f"><link rel="canonical" href="https://leonyun107.github.io/projects/double-gyre.html"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><title>Double Gyre Particle Tracking | Leon Hou</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="site-header"><a class="brand" href="../index.html" aria-label="Leon Hou 首页"><span class="brand-mark" aria-hidden="true">LH</span><span class="brand-copy"><strong>LEON HOU</strong><small>RESEARCH · BUILDING · THINKING</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button><nav id="main-nav" class="site-nav" aria-label="主导航"><a href="../index.html">Home</a><a href="index.html" aria-current="page">Work</a><a href="../about.html">About</a><a class="nav-external" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">GitHub</a></nav></header>
+  <main id="main-content">
+    <section class="section-shell project-hero"><p class="project-kicker">Independent Course Project · Numerical Experiment</p><h1>Double Gyre <span>流场与粒子追踪</span></h1><p class="lead">在周期变化的双涡旋流场中计算拉格朗日粒子轨迹，观察不同初始位置的输运、跨涡交换和位移差异。</p><p class="project-summary-en" lang="en">An independent numerical course project exploring transport in a time-dependent double-gyre flow. I implemented the velocity field, particle integration and visual analysis, while treating the setup as an idealized experiment rather than a full ocean model.</p><dl class="project-meta-grid"><div><dt>Role</dt><dd>独立完成</dd></div><div><dt>Context</dt><dd>课程项目与数值训练</dd></div><div><dt>Tools</dt><dd>Python · NumPy · Matplotlib</dd></div></dl></section>
+    <figure class="project-figure section-shell section-compact"><img src="../assets/images/double-gyre-particle-tracking.webp" width="1800" height="652" alt="Double Gyre 中左右涡旋的粒子轨迹，以及粒子最终位置和位移对比"><figcaption>粒子轨迹与最终位移。左图展示两个涡旋中的长期轨迹，右图比较不同初始位置粒子的最终位移。</figcaption></figure>
+    <section class="section-shell project-content"><h2>Question</h2><div class="reading"><p>当两个涡旋之间的分界随时间周期摆动时，粒子是否会始终停留在初始涡旋中？哪些初始位置更容易发生跨区输运？轨迹图和位移统计分别能说明什么？</p></div></section>
+    <section class="section-shell project-content"><h2>Approach</h2><div class="reading"><div class="evidence-list"><article class="evidence-item"><strong>构建时变流场</strong><p>根据标准 Double Gyre 流函数计算二维速度场与涡度，并生成不同时间的流场快照。</p></article><article class="evidence-item"><strong>拉格朗日粒子积分</strong><p>从多个初始位置释放粒子，通过四阶 Runge–Kutta 方法逐步更新粒子轨迹。</p></article><article class="evidence-item"><strong>多角度可视化</strong><p>比较流线、典型轨迹、时间演化、最终位移和粒子对扩散等输出。</p></article></div></div></section>
+    <section class="section-shell project-content"><h2>What the experiment shows</h2><div class="reading"><p>涡旋核心附近的粒子通常保持更规则的闭合或准闭合运动；靠近中间分界和外缘的粒子轨迹对流场的周期变化更敏感。单纯观察瞬时流线不足以判断长期输运，需要沿时间积分粒子轨迹。</p><p>这些观察来自理想化参数下的数值实验，用于理解拉格朗日输运概念，不对应某个真实海域。</p></div></section>
+    <section class="section-shell project-content"><h2>Limits</h2><div class="reading"><ul><li>二维、解析给定的理想化速度场，不含真实海洋中的地形、湍流和边界条件。</li><li>粒子为被动示踪物，不反馈流场，也没有质量、浮力或沉降过程。</li><li>数值图像说明模型行为，不构成观测验证或真实海洋预测。</li></ul></div></section>
+    <section class="section-shell section-rule next-project"><div><p class="section-label">NEXT PROJECT</p><h2>三维溢油输运对比</h2><p class="quiet">继续比较两种描述污染物输运的数值视角。</p></div><a class="button button-secondary" href="oil-transport.html">继续阅读 →</a></section>
+  </main>
+  <footer class="site-footer"><p>© <span id="year"></span> Leon Hou.</p><p><a href="index.html">返回作品索引</a></p></footer><script src="../script.js"></script>
+</body>
+</html>

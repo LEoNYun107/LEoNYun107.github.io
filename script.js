@@ -8,26 +8,32 @@ if (button && nav) {
   const closeMenu = (returnFocus = false) => {
     nav.classList.remove("open");
     button.setAttribute("aria-expanded", "false");
-
     if (returnFocus) button.focus();
   };
 
   button.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     button.setAttribute("aria-expanded", String(isOpen));
-
     if (isOpen) nav.querySelector("a")?.focus();
   });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      closeMenu();
-    });
+    link.addEventListener("click", () => closeMenu());
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && nav.classList.contains("open")) {
       closeMenu(true);
     }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (nav.classList.contains("open") && !nav.contains(event.target) && !button.contains(event.target)) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) closeMenu();
   });
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="理想化三维海底管道溢油输运的拉格朗日与欧拉方法对比实验。">
+  <meta name="theme-color" content="#07111f"><link rel="canonical" href="https://leonyun107.github.io/projects/oil-transport.html"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css"><title>3D Oil Transport Experiment | Leon Hou</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <header class="site-header"><a class="brand" href="../index.html" aria-label="Leon Hou 首页"><span class="brand-mark" aria-hidden="true">LH</span><span class="brand-copy"><strong>LEON HOU</strong><small>RESEARCH · BUILDING · THINKING</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button><nav id="main-nav" class="site-nav" aria-label="主导航"><a href="../index.html">Home</a><a href="index.html" aria-current="page">Work</a><a href="../about.html">About</a><a class="nav-external" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">GitHub</a></nav></header>
+  <main id="main-content">
+    <section class="section-shell project-hero"><p class="project-kicker">Independent Numerical Experiment · Course Training</p><h1>三维溢油输运的<span>拉格朗日—欧拉对比</span></h1><p class="lead">以理想化海底管道泄漏为场景，用液滴轨迹和连续浓度场两种方式表示污染物输运，并比较它们对羽流形态的表达。</p><p class="project-summary-en" lang="en">An independent course-based numerical experiment comparing Lagrangian droplets with an Eulerian concentration field in an idealized subsea oil-release scenario. The model is designed for conceptual comparison and is not calibrated for operational spill prediction.</p><dl class="project-meta-grid"><div><dt>Role</dt><dd>独立完成</dd></div><div><dt>Context</dt><dd>课程项目与数值训练</dd></div><div><dt>Tools</dt><dd>Python · NumPy · SciPy · Matplotlib</dd></div></dl></section>
+    <figure class="project-figure section-shell section-compact"><img src="../assets/images/oil-transport-plume.webp" width="1800" height="647" alt="海底管道泄漏场景中，拉格朗日液滴与欧拉浓度羽流随时间变化的三维对比"><figcaption>同一理想化释放过程的两种数值表示：上排为拉格朗日液滴，下排为欧拉浓度场。</figcaption></figure>
+    <section class="section-shell project-content"><h2>Question</h2><div class="reading"><p>离散粒子和连续浓度场都可以描述污染物输运，但它们突出的是不同信息：粒子方法直观呈现个体路径和粒径差异，欧拉方法更适合观察整体浓度分布。这个实验比较两者在同一背景流与浮升条件下的表现。</p></div></section>
+    <section class="section-shell project-content"><h2>Approach</h2><div class="reading"><div class="evidence-list"><article class="evidence-item"><strong>理想化背景流</strong><p>设置具有垂向切变的水平流，并加入较弱的横向输运。</p></article><article class="evidence-item"><strong>拉格朗日液滴</strong><p>给液滴分配粒径、浮升速度和随机游走，跟踪位置与到达表面的过程。</p></article><article class="evidence-item"><strong>欧拉浓度场</strong><p>在三维网格上计算平流、扩散与源项作用下的连续浓度变化。</p></article><article class="evidence-item"><strong>共同诊断</strong><p>比较羽流演化、垂向剖面、表面油膜和统计量，而不是只生成一幅最终图。</p></article></div></div></section>
+    <section class="section-shell project-content"><h2>Interpretation</h2><div class="reading"><p>两种方法的扩散形态并不完全相同：粒子表示更容易保留离散性和随机波动，连续浓度场则表现得更平滑。差异来自数值表示、扩散处理和可视化方式，不能简单地把其中一张图认定为“更真实”。</p></div></section>
+    <section class="section-shell project-content"><h2>Limits</h2><div class="reading"><ul><li>物理过程经过明显简化，参数并未针对真实溢油事件率定。</li><li>没有真实地形、潮汐、波浪、风场、复杂油品组分和观测数据验证。</li><li>图中结果仅用于课程训练和方法比较，不可用于应急预测或风险决策。</li></ul></div></section>
+    <section class="section-shell section-rule next-project"><div><p class="section-label">NEXT PROJECT</p><h2>胶州湾风生环流</h2><p class="quiet">从理想化三维输运进入真实网格上的简化环流实验。</p></div><a class="button button-secondary" href="jiaozhou-bay-circulation.html">继续阅读 →</a></section>
+  </main>
+  <footer class="site-footer"><p>© <span id="year"></span> Leon Hou.</p><p><a href="index.html">返回作品索引</a></p></footer><script src="../script.js"></script>
+</body>
+</html>

@@ -3,160 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="侯亮（Leon）的长期个人主页，记录研究、技术构建、学习与思考，包括气候动力学、数值模拟、AI agents 和知识工具探索。">
-  <meta name="theme-color" content="#f5f2ea">
-  <title>Leon Hou | 侯亮</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="侯亮（Leon Hou）的长期个人主页，记录气候与环境研究、数值实验、技术构建、学习系统与个人思考。">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Leon Hou | 侯亮">
+  <meta property="og:description" content="Research, building, learning and thinking — a long-term personal homepage.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leonyun107.github.io/">
+  <meta property="og:image" content="https://leonyun107.github.io/assets/images/leon-waterfront.webp">
+  <link rel="canonical" href="https://leonyun107.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <title>Leon Hou | Research, Building &amp; Thinking</title>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="返回首页">Leon Hou</a>
+    <a class="brand" href="index.html" aria-label="Leon Hou 首页">
+      <span class="brand-mark" aria-hidden="true">LH</span>
+      <span class="brand-copy"><strong>LEON HOU</strong><small>RESEARCH · BUILDING · THINKING</small></span>
+    </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">菜单</button>
-    <nav id="main-nav" aria-label="主导航">
-      <a href="#about">关于</a>
-      <a href="#focus">近况</a>
-      <a href="#work">作品</a>
-      <a href="#journey">经历</a>
-      <a href="#contact">联系</a>
+    <nav id="main-nav" class="site-nav" aria-label="主导航">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="projects/index.html">Work</a>
+      <a href="about.html">About</a>
+      <a class="nav-external" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="main-content">
     <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">RESEARCH · TECHNOLOGY · THINKING</p>
-        <h1>你好，我是侯亮。<br><span>也可以叫我 Leon。</span></h1>
-        <p class="lead">我喜欢理解复杂系统、探索陌生问题，并用科学、计算与 AI，把模糊的想法变成清晰、可实现的东西。</p>
-        <p class="lead">目前我在中国海洋大学学习环境科学（环境动力方向），正在围绕大气阻塞与气候动力学开展科研训练，同时也持续探索 AI agents、数据工具和个人知识系统。</p>
+      <div>
+        <p class="eyebrow">RESEARCH · BUILDING · THINKING</p>
+        <h1>理解复杂系统，<br><span>把模糊的问题变得清晰。</span></h1>
+        <p class="lead">你好，我是侯亮，也可以叫我 Leon。我喜欢探索陌生问题，并通过科学、计算与工具，逐步形成可以验证、使用和继续积累的东西。</p>
+        <p class="lead">目前就读于中国海洋大学环境科学专业，正在学习大气阻塞与气候动力学，同时持续探索数值计算、AI agents 和个人知识系统。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#work">看看我在做什么</a>
-          <a class="button secondary" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="button button-primary" href="projects/index.html">查看我的工作 <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="about.html">进一步了解我</a>
         </div>
       </div>
-      <aside class="hero-card" aria-label="个人简介">
-        <img src="https://avatars.githubusercontent.com/u/148601316?v=4" alt="Leon 的 GitHub 头像">
-        <div>
-          <strong>侯亮 · Leon Hou</strong>
-          <p>Environmental Science Undergraduate</p>
-          <p>Ocean University of China</p>
+      <aside class="observatory-panel" aria-label="当前关注方向">
+        <span class="panel-label">CURRENT SIGNALS / 2026</span>
+        <div class="signal-list">
+          <div class="signal"><span class="signal-dot" aria-hidden="true"></span><div><strong>Atmospheric Blocking</strong><small>识别、分类与长期变化</small></div></div>
+          <div class="signal"><span class="signal-dot" aria-hidden="true"></span><div><strong>Scientific Computing</strong><small>数值实验与可复现分析</small></div></div>
+          <div class="signal"><span class="signal-dot" aria-hidden="true"></span><div><strong>Knowledge Tools</strong><small>AI agents 与学习系统</small></div></div>
         </div>
       </aside>
     </section>
 
-    <section id="about" class="section-shell two-column">
-      <div>
-        <p class="section-number">01 / ABOUT</p>
-        <h2>在模糊问题中，寻找可以解释的结构。</h2>
-      </div>
-      <div class="prose">
-        <p>
-          我对问题背后的结构感兴趣。面对还不清晰的现象、需求或想法，我会先阅读、拆解和提问，
-          再通过数据、模型、代码或工具逐步验证。
-        </p>
-        <p>
-          本科期间，环境科学、海洋动力学、数值计算与环境实验训练让我开始学习如何理解复杂系统。
-          这个网站会长期记录我的研究、构建、学习与思考，也为尚未出现的未来方向保留空间。
-        </p>
-      </div>
-    </section>
-
-    <section id="focus" class="section-shell">
-      <p class="section-number">02 / CURRENT FOCUS</p>
+    <section id="focus" class="section-shell section-rule">
       <div class="section-heading">
-        <h2>当前，我主要把时间投入三类彼此关联的事情。</h2>
-        <p>这些方向仍在发展中，也会随着我的学习不断更新。</p>
+        <div><p class="section-label">01 / CURRENT FOCUS</p><h2>当前投入的三条线索，指向同一种工作方式。</h2></div>
+        <p>理解问题的结构，选择合适的方法，再把过程整理成可以复查和继续使用的成果。</p>
       </div>
-      <div class="card-grid">
-        <article class="card featured">
-          <span>Research &amp; Science</span>
-          <h3>大气阻塞与气候动力学</h3>
-          <p>基于 ERA5 等再分析资料，学习不同类型大气阻塞的识别、分类、长期变化及其可能机制。</p>
-          <ul>
-            <li>位势高度异常与梯度翻转</li>
-            <li>阻塞振幅、范围与持续时间</li>
-            <li>类型划分、移动特征与长期变化</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span>Technology &amp; Building</span>
-          <h3>AI Agents 与知识工具</h3>
-          <p>探索 AI agents、文献工作流、科研自动化和数据工具，思考它们如何帮助理解问题、减少重复工作并完成实际任务。</p>
-        </article>
-        <article class="card">
-          <span>Learning &amp; Systems</span>
-          <h3>学习与个人系统</h3>
-          <p>持续积累阅读、英语、知识管理和个人学习系统，让学习过程更清晰、更可持续，也为新的兴趣和方向保留空间。</p>
-        </article>
+      <div class="focus-grid">
+        <article class="focus-card"><span>RESEARCH &amp; SCIENCE</span><h3>大气阻塞与气候动力学</h3><p>基于 ERA5 等再分析资料，学习不同类型大气阻塞的识别、分类、长期变化及其可能机制。</p></article>
+        <article class="focus-card"><span>TECHNOLOGY &amp; BUILDING</span><h3>AI Agents 与知识工具</h3><p>探索文献工作流、科研自动化和数据工具，关注 AI 如何帮助澄清问题与减少重复工作。</p></article>
+        <article class="focus-card"><span>LEARNING &amp; SYSTEMS</span><h3>学习与个人系统</h3><p>持续整理课程、阅读、英语和知识管理方法，让学习不仅能够完成，也能被重新理解。</p></article>
       </div>
     </section>
 
-    <section id="work" class="section-shell">
-      <p class="section-number">03 / SELECTED WORK</p>
+    <section id="work" class="section-shell section-rule">
       <div class="section-heading">
-        <h2>一些正在积累的工作</h2>
+        <div><p class="section-label">02 / SELECTED WORK</p><h2>从研究问题到数值实验，再到个人学习系统。</h2></div>
+        <p>这里展示的是过程与证据，而不是被放大的技能标签。每个项目都会注明真实性质与当前边界。</p>
       </div>
-      <div class="project-list">
-        <article class="project">
-          <div class="project-meta">2026 · Undergraduate Research</div>
-          <div>
-            <h3>不同类型大气阻塞的长期变化及机制</h3>
-            <p>围绕再分析资料、阻塞事件识别、类型划分与统计特征开展本科研究训练，并尝试建立可复现的分析流程。</p>
-            <div class="tags"><span>ERA5</span><span>Python</span><span>Climate Dynamics</span></div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project-meta">2024–2026 · Provincial Undergraduate Research Project</div>
-          <div>
-            <h3>生物炭对典型叶菜吸收 UV-328 的影响</h3>
-            <p>作为省级大学生创新创业训练项目核心成员，参与文献调研、实验设计、样品测试、数据处理、图表绘制和结题报告撰写。</p>
-            <div class="tags"><span>Environmental Chemistry</span><span>EEM</span><span>Data Analysis</span></div>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project-meta">Course Projects &amp; Research Training</div>
-          <div>
-            <h3>海洋动力学与环境数值实验</h3>
-            <p>在课程项目与研究训练中完成 Double Gyre 粒子追踪、三维溢油输运对比，以及 EFDC 潮流与风生流模拟等数值实验。</p>
-            <div class="tags"><span>Numerical Experiments</span><span>Python / MATLAB</span><span>EFDC</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="journey" class="section-shell two-column">
-      <div>
-        <p class="section-number">04 / JOURNEY</p>
-        <h2>从环境科学出发，持续探索问题、工具与可能性。</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <time>2023 — Present</time>
-          <h3>中国海洋大学</h3>
-          <p>环境科学专业，环境动力方向。学习数值计算、物理海洋学、环境监测与地球系统相关课程，并逐步形成对复杂系统和计算方法的兴趣。</p>
-        </div>
-        <div class="timeline-item">
-          <time>Open Paths</time>
-          <h3>持续学习与跨学科实践</h3>
-          <p>未来希望继续在研究、技术、工具和跨学科项目中积累经验，保持对复杂系统、真实问题与可用成果的关注，而不预设唯一的职业路径。</p>
-        </div>
+      <div class="work-grid">
+        <a class="work-card work-card-large" href="projects/atmospheric-blocking.html">
+          <span class="work-meta">Ongoing Undergraduate Research</span>
+          <div><h3>大气阻塞：从识别方法到可比较的研究问题</h3><p>梳理位势高度梯度翻转、高度异常与混合识别方法，为后续类型划分和长期变化研究建立方法背景。</p><ul class="tag-list"><li>ERA5</li><li>Climate Dynamics</li><li>Research in progress</li></ul></div>
+          <span class="work-link">阅读研究背景 →</span>
+        </a>
+        <a class="work-card work-card-medium" href="projects/double-gyre.html">
+          <span class="work-meta">Independent Course Project</span>
+          <div><h3>Double Gyre 粒子追踪</h3><p>在周期变化的双涡旋流场中计算拉格朗日粒子轨迹，并观察输运、交换与扩散特征。</p></div>
+          <span class="work-link">查看数值实验 →</span>
+        </a>
+        <a class="work-card work-card-third" href="projects/oil-transport.html">
+          <span class="work-meta">Independent Numerical Experiment</span>
+          <div><h3>三维溢油输运对比</h3><p>以理想化海底管道泄漏为场景，对比拉格朗日液滴与欧拉浓度表示。</p></div>
+          <span class="work-link">查看实验 →</span>
+        </a>
+        <a class="work-card work-card-third" href="projects/jiaozhou-bay-circulation.html">
+          <span class="work-meta">Course Training · Independent Implementation</span>
+          <div><h3>胶州湾风生环流</h3><p>围绕 EFDC 网格与简化浅水方程，分析不同风速下的深度平均环流响应。</p></div>
+          <span class="work-link">查看实验 →</span>
+        </a>
+        <a class="work-card work-card-third" href="projects/course-knowledge-base.html">
+          <span class="work-meta">Personal Learning System · In Progress</span>
+          <div><h3>本科课程知识库</h3><p>把散落的课程材料转化为可恢复、可检查、可持续维护的知识地图。</p></div>
+          <span class="work-link">查看系统设计 →</span>
+        </a>
       </div>
     </section>
 
-    <section id="contact" class="section-shell contact-panel">
-      <p class="section-number">05 / CONTACT</p>
-      <h2>欢迎交流问题、项目与有趣的想法。</h2>
-      <p>目前最方便的公开联系方式是 GitHub。未来也会逐步加入经过确认的作品、文章和联系入口。</p>
-      <a class="button primary" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">访问我的 GitHub ↗</a>
+    <section class="section-shell section-rule two-column">
+      <div><p class="section-label">03 / HOW I WORK</p><h2>先理解，再实现；留下能够复查的路径。</h2></div>
+      <ol class="process-list">
+        <li><div><strong>阅读与提问</strong><p>先确定现象、概念和现有方法到底在回答什么。</p></div></li>
+        <li><div><strong>拆解与建模</strong><p>把模糊任务拆成变量、假设、步骤和可以验证的边界。</p></div></li>
+        <li><div><strong>计算与检查</strong><p>用代码、模型、图表或实验输出检验理解，并记录失败与限制。</p></div></li>
+        <li><div><strong>整理与积累</strong><p>把一次性工作整理成之后仍能理解、复现或继续改进的结构。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section-shell section-rule">
+      <div class="life-panel">
+        <img src="assets/images/leon-waterfront.webp" width="1000" height="1000" loading="lazy" alt="Leon 在湖边步道眺望水面">
+        <div><p class="section-label">04 / BEYOND WORK</p><h2>研究之外，也保留对生活的感受力。</h2><p>我也在持续学习英语、整理阅读与个人系统，并通过旅行、观察和新的兴趣理解更大的世界。这部分会慢慢生长，但只公开经过整理、真正希望与他人分享的内容。</p><a class="button button-secondary" href="about.html">About Leon →</a></div>
+      </div>
+    </section>
+
+    <section class="section-shell section-rule two-column">
+      <div><p class="section-label">05 / JOURNEY</p><h2>从环境科学出发，保持路径开放。</h2></div>
+      <div class="journey-line">
+        <article class="journey-item"><time>2023 — PRESENT</time><h3>中国海洋大学 · 环境科学</h3><p>环境动力方向。本科阶段逐步接触环境科学、海洋动力学、数值计算、环境实验和数据处理。</p></article>
+        <article class="journey-item"><time>CURRENT</time><h3>从数值实验走向气候问题</h3><p>当前把研究重点放在大气阻塞识别、分类与长期变化，同时继续建设科学计算和知识工具基础。</p></article>
+        <article class="journey-item"><time>OPEN PATHS</time><h3>研究、技术与跨学科实践</h3><p>未来方向保持开放，希望持续积累能够被理解、使用和继续发展的真实成果。</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell section-compact">
+      <div class="contact-panel"><p class="section-label">06 / CONTACT</p><h2>欢迎交流问题、项目与有趣的想法。</h2><p>目前最方便的公开入口是 GitHub。邮箱、CV 和其他账号会在真实准备好并确认公开后再加入。</p><a class="button button-primary" href="https://github.com/LEoNYun107" target="_blank" rel="noopener noreferrer">访问 GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Leon Hou. Built slowly, kept thoughtfully.</p>
-  </footer>
-
+  <footer class="site-footer"><p>© <span id="year"></span> Leon Hou.</p><p>Built slowly. Kept thoughtfully.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
